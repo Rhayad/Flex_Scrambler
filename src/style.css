@@ -1,0 +1,28 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+/*#mainTextArea {*/
+s|TextArea.big {	
+	font-size:24;
+	color:#000000;
+	font-family:"_Typenoksidi";
+}
+
+s|Label.title {
+	font-size:36;
+	color:#000000;
+	font-family:"_Typenoksidi";
+	text-decoration:underline;
+	text-align:center;
+	padding-bottom:30;
+}
+
+@font-face {
+	src:url("../assets/fonts/typenoksidi.ttf");
+	fontFamily:"_Typenoksidi";
+	advancedAntiAliasing: true;
+	embedAsCFF:true;
+
+}
+

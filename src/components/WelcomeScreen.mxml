@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx">
+
+	<fx:Script>
+		<![CDATA[
+			import spark.components.Application;
+		]]>
+	</fx:Script>
+	
+	<fx:Metadata>
+		[Event(name="startApp", type="flash.events.Event")]
+	</fx:Metadata>
+
+	<s:HGroup width="100%" height="100%" top="30">
+		
+		<s:Rect width="300" height="100%">
+		</s:Rect>
+		
+		<s:VGroup left="20" right="20" top="20" bottom="20"
+				  width="100%">
+			
+			<s:Label id="title"
+					 text="The ultimate Textscrambler"
+					 styleName="title"
+					 width="100%"
+					 paddingTop="30"
+					 />
+			<s:HGroup>
+				<s:Rect width="200" />
+				<s:Button label="Start" 
+						  click="dispatchEvent(new Event('startApp'))"
+						  width="200"/>
+				<s:Rect width="200" />
+			</s:HGroup>
+		</s:VGroup>
+		
+		<s:Group width="300" height="100%">
+			<s:BitmapImage source="@Embed('assets/images/scrambler.png')" />
+		</s:Group>
+		
+	</s:HGroup>
+
+
+</s:VGroup>
